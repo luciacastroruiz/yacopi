@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        async function registrarUsuario() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const mensaje = document.getElementById('mensaje');
+            mensaje.textContent = '';
+
+            try {
+                const response = await fetch('http://127.0.0.1:8090/trenverde/api/usuarios/registrar', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ 
+                        username, 
+                        password,
+                        roles: [{ idRol: 1 }] // Asegúrate de incluir los roles según el formato esperado
+                    })
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(`Error ${response.status}: ${errorText}`);
+                }
+
+                const nuevoUsuario = await response.json();
+                mensaje.textContent = `Usuario registrado: ID ${nuevoUsuario.idUsuario} - Username: ${nuevoUsuario.username}`;
+            } catch (error) {
+                mensaje.textContent = `Error: ${error.message}`;
+                console.error('Error al registrar usuario:', error);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Registrar Usuario</h1>
+    <form onsubmit="event.preventDefault(); registrarUsuario();">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Registrar</button>
+    </form>
+    <p id="mensaje"></p>
+</body>
+</html>
