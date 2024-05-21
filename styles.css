@@ -38,20 +38,20 @@ header .login-button {
     background-color: #007bff;
 }
 
-.hero {
+.body {
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
 }
 
-.hero .main-image {
+.body .main-image {
     width: 80%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
-.hero .overlay {
+.body .overlay {
     position: absolute;
     top: 0%;
     left: 10%;
@@ -61,7 +61,7 @@ header .login-button {
     border-radius: 10px;
 }
 
-.hero .hero-text {
+.body .body-text {
     position: absolute;
     top:75%;
     left: 43%;
@@ -69,7 +69,7 @@ header .login-button {
     text-align: left;
 }
 
-.hero .register-button, .hero .login-button {
+.body .register-button, .body .login-button {
     background-color: #28a745;
     padding: 15px 30px;
     font-size: 1em;
@@ -80,7 +80,7 @@ header .login-button {
     text-decoration: none;
 }
 
-.hero .login-button {
+.body .login-button {
     background-color: #007bff;
     color: white;
 }
