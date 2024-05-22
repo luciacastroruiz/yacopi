@@ -10,27 +10,29 @@
     <header>
         <div class="header">Bienvenido a Tren Verde</div>
         <nav>
-            <a href="#">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="#">Rutas</a>
             <a href="#">Turismo</a>
             <a href="#">Carga Pesada</a>
             <a href="#">Noticias</a>
-            <a href="registro-usuario.html" class="register-button">Registrarse</a>
+            <div class="register-wrapper">
+                <a href="#" class="register-button">Registrarse</a>
+                <div class="register-options">
+                    <a href="registro-cliente.html">Cliente</a>
+                    <a href="registro-empresa.html">Empresa</a>
+                </div>
+            </div>
             <a href="#" class="login-button">Iniciar Sesión</a>
         </nav>       
     </header>
-    <hr size="1%" width="0%" color="white" > <! -- separador header y body -- >
+    <hr size="1%" width="0%" color="white"> <!-- separador header y body -->
     <main>
         <section class="body">
             <img src="/images/image1.jpg" alt="Train Image 1" class="main-image">
             <div class="overlay"></div>
             <div class="body-text">
                 <h1>Viaja con nosotros</h1>
-                <p>Rapido, eco-friendly, sin complicaciones. Nuestros trenes funcionan con energía 100% renovable. Experimente el futuro de los viajes hoy.
-                    <br>
-                    <br>
-                    <br>
-                </p>
+                <p>Rápido, eco-friendly, sin complicaciones. Nuestros trenes funcionan con energía 100% renovable. Experimente el futuro de los viajes hoy.</p>
                 <a href="#" class="register-button">Reserva ahora</a>
                 <a href="#" class="login-button">Ver rutas</a>
             </div>
@@ -48,5 +50,11 @@
             <a href="pagos.html" class="link-box">Pagos</a>
         </section>
     </main>
+    <div class="register-options">
+        <a href="registro-cliente.html">Registro Cliente</a>
+        <a href="registro-empresa.html">Registro Empresa</a>
+    </div>
 </body>
 </html>
+
+<script src="scripts.js"></script>
