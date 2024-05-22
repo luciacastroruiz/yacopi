@@ -72,16 +72,16 @@
     <hr size="1%" width="0%" color="white">
     <main>
         <section class="registration-form">
-            <h1>Crear una cuenta personal</h1>
+            <h1>Crear una cuenta para empresa</h1>
             <form onsubmit="event.preventDefault(); registrarUsuario();">
                 <div class="form-row">
                     <label for="tipo-documento">Tipo de Documento</label>
                     <select id="tipo-documento" name="tipo-documento">
-                        <option value="Cédula">Cédula de Ciudadania</option>
-                        <option value="Tarjeta Identidad">Tarjeta de Identidad</option>
+                        <option value="NIT">NIT</option>
+                        <!-- <option value="Cédula">Cédula de Ciudadania</option>
                         <option value="Pasaporte">Pasaporte</option>
                         <option value="Cédula Extranjeria">Cedula Extranjeria</option>
-                        <option value="NIT">NIT</option>
+                        <option value="Tarjeta Identidad">Tarjeta de Identidad</option> -->
                     </select>
                 </div>
                 <div class="form-row">
@@ -89,16 +89,8 @@
                     <input type="text" id="numero-documento" name="numero-documento" required>
                 </div>
                 <div class="form-row">
-                    <label for="nombre">Nombres Y Apellidos</label>
+                    <label for="nombre">Nombre Razón Social</label>
                     <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-row">
-                    <label for="genero">Género</label>
-                    <select id="genero" name="genero" required>
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="otro">Otro</option>
-                    </select>
                 </div>
                 <div class="form-row">
                     <label for="email">Email</label>
@@ -109,7 +101,11 @@
                     <input type="tel" id="telefono" name="telefono" required>
                 </div>
                 <div class="form-row">
-                    <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                    <label for="telefono">Teléfono Fijo</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-row">
+                    <label for="fecha-nacimiento">Fecha de Registro</label>
                     <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
                 </div>
                 <div class="form-row">

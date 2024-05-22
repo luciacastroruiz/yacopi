@@ -89,7 +89,7 @@ header .login-button {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 .images img {
@@ -102,7 +102,7 @@ header .login-button {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 .link-box {
@@ -252,4 +252,14 @@ header a {
     margin-bottom: 5px;
     text-decoration: none;
     color: #ffffff; /* Cambia el color del texto botones registro */
+}
+
+/* pie de pagina */
+
+footer 
+{
+    text-align: center; /* Centra el texto dentro del pie de página */
+    padding: 20px 0; 
+    background-color: #ffffff; /* Color de fondo del pie de página */
+    color: #333; /* Color del texto del pie de página */
 }
