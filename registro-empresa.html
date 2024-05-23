@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tren Verde - Registro</title>
+    <title>Registro Empresa </title>
     <link rel="stylesheet" href="styles.css">
     <script>
         async function registrarUsuario() {
             const tipoDocumento = document.getElementById('tipo-documento').value;
             const numeroDocumento = document.getElementById('numero-documento').value;
             const nombre = document.getElementById('nombre').value;
-            const genero = document.getElementById('genero').value;
             const email = document.getElementById('email').value;
             const telefono = document.getElementById('telefono').value;
+            const telefonoFijo = document.getElementById('telefonoFijo').value;
             const fechaNacimiento = document.getElementById('fecha-nacimiento').value;
             const direccion = document.getElementById('direccion').value;
             const username = document.getElementById('username').value;
@@ -30,9 +30,9 @@
                         tipoDocumento,
                         numeroDocumento,
                         nombre,
-                        genero,
                         email,
                         telefono,
+                        telefonoFijo,
                         fechaNacimiento,
                         direccion,
                         username,
@@ -57,14 +57,13 @@
 </head>
 <body>
     <header>
-        <div class="header">Bienvenido a Tren Verde</div>
+        <div class="header">Registro en Tren Verde</div>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="#">Rutas</a>
             <a href="#">Turismo</a>
             <a href="#">Carga Pesada</a>
             <a href="#">Noticias</a>
-
             <!-- <a href="registro.html" class="register-button">Registrarse</a> -->
             <a href="#" class="login-button">Iniciar Sesión</a>
         </nav>       
@@ -101,8 +100,8 @@
                     <input type="tel" id="telefono" name="telefono" required>
                 </div>
                 <div class="form-row">
-                    <label for="telefono">Teléfono Fijo</label>
-                    <input type="tel" id="telefono" name="telefono" required>
+                    <label for="telefonoFijo">Teléfono Fijo</label>
+                    <input type="tel" id="telefonoFijo" name="telefonoFijo" required>
                 </div>
                 <div class="form-row">
                     <label for="fecha-nacimiento">Fecha de Registro</label>
