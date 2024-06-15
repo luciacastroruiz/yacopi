@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Empresa </title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Registro Cliente</title>
+    <link rel="stylesheet" href="styles-registro.css">
     <script>
         async function registrarUsuario() {
             const tipoDocumento = document.getElementById('tipo-documento').value;
             const numeroDocumento = document.getElementById('numero-documento').value;
             const nombre = document.getElementById('nombre').value;
+            const genero = document.getElementById('genero').value;
             const email = document.getElementById('email').value;
             const telefono = document.getElementById('telefono').value;
-            const telefonoFijo = document.getElementById('telefonoFijo').value;
             const fechaNacimiento = document.getElementById('fecha-nacimiento').value;
             const direccion = document.getElementById('direccion').value;
             const username = document.getElementById('username').value;
@@ -30,9 +30,9 @@
                         tipoDocumento,
                         numeroDocumento,
                         nombre,
+                        genero,
                         email,
                         telefono,
-                        telefonoFijo,
                         fechaNacimiento,
                         direccion,
                         username,
@@ -59,7 +59,7 @@
     <header>
         <div class="header">Registro en Tren Verde</div>
         <nav>
-            <a href="index.html">Inicio</a>
+            <a href="/Inicio/index.html">Inicio</a>
             <a href="#">Rutas</a>
             <a href="#">Turismo</a>
             <a href="#">Carga Pesada</a>
@@ -71,16 +71,16 @@
     <hr size="1%" width="0%" color="white">
     <main>
         <section class="registration-form">
-            <h1>Crear una cuenta para empresa</h1>
+            <h1>Crear una cuenta personal</h1>
             <form onsubmit="event.preventDefault(); registrarUsuario();">
                 <div class="form-row">
                     <label for="tipo-documento">Tipo de Documento</label>
                     <select id="tipo-documento" name="tipo-documento">
-                        <option value="NIT">NIT</option>
-                        <!-- <option value="Cédula">Cédula de Ciudadania</option>
+                        <option value="Cédula">Cédula de Ciudadania</option>
+                        <option value="Tarjeta Identidad">Tarjeta de Identidad</option>
                         <option value="Pasaporte">Pasaporte</option>
                         <option value="Cédula Extranjeria">Cedula Extranjeria</option>
-                        <option value="Tarjeta Identidad">Tarjeta de Identidad</option> -->
+                        <option value="NIT">NIT</option>
                     </select>
                 </div>
                 <div class="form-row">
@@ -88,8 +88,16 @@
                     <input type="text" id="numero-documento" name="numero-documento" required>
                 </div>
                 <div class="form-row">
-                    <label for="nombre">Nombre Razón Social</label>
+                    <label for="nombre">Nombres Y Apellidos</label>
                     <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-row">
+                    <label for="genero">Género</label>
+                    <select id="genero" name="genero" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
                 </div>
                 <div class="form-row">
                     <label for="email">Email</label>
@@ -100,11 +108,7 @@
                     <input type="tel" id="telefono" name="telefono" required>
                 </div>
                 <div class="form-row">
-                    <label for="telefonoFijo">Teléfono Fijo</label>
-                    <input type="tel" id="telefonoFijo" name="telefonoFijo" required>
-                </div>
-                <div class="form-row">
-                    <label for="fecha-nacimiento">Fecha de Registro</label>
+                    <label for="fecha-nacimiento">Fecha de Nacimiento</label>
                     <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
                 </div>
                 <div class="form-row">
