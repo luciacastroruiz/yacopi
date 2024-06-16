@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/77c4e13a1c.js" crossorigin="anonymous"></script>
+    <script defer src="https://media.twiliocdn.com/sdk/js/webchat-v3/releases/1.1.0/webchat.min.js" integrity="sha256-c1l/wwVPqGd5P7Wni+vQ85wSk0UCDqZyUDQRJBKRQO0=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="page-wrapper">
@@ -135,6 +137,15 @@
             </footer>
         </div>
     </div>
+    <div id="twilio-webchat-widget-root"></div>
+<script>
+  window.addEventListener("load", () => {
+    const appConfig = {
+       deploymentKey: "CVc8f2aefad95827c36140560e96194e20"
+    }
+    Twilio.initWebchat(appConfig); 
+  })
+</script>
 </body>
 <script src="app.js"></script>
 </html>
