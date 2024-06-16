@@ -1,59 +1,140 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tren Verde - Home</title>
+    <title>Tren Verde Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/77c4e13a1c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="header">Bienvenido a Tren Verde</div>
-        <nav>
-            <a href="/Inicio/index.html">Inicio</a>
-            <a href="#">Rutas</a>
-            <a href="#">Turismo</a>
-            <a href="#">Carga Pesada</a>
-            <a href="#">Noticias</a>
-            <div class="register-wrapper">
-                <a href="#" class="register-button">Registrarse</a>
-                <div class="register-options">
-                    <a href="/Inicio/Registro/registro-cliente.html">Cliente</a>
-                    <a href="/Inicio/Registro/registro-empresa.html">Empresa</a>
+    <div id="page-wrapper">
+        <header id="header">
+            <nav id="nav-bar">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
-            </div>
-            <a href="#" class="login-button">Iniciar Sesión</a>
-        </nav>       
-    </header>
-    <hr size="1%" width="0%" color="white"> <!-- separador header y body -->
-    <main>
-        <section class="body">
-            <img src="/images/image1.jpg" alt="Train Image 1" class="main-image">
-            <div class="overlay"></div>
-            <div class="body-text">
-                <h1>Viaja con nosotros</h1>
-                <p>Rápido, eco-friendly, sin complicaciones. Nuestros trenes funcionan con energía 100% renovable. Experimente el futuro de los viajes hoy.</p>
-                <a href="#" class="register-button">Reserva ahora</a>
-                <a href="#" class="login-button">Ver rutas</a>
-            </div>
-        </section>
-        <section class="images">
-            <img src="/images/image2.jpg" alt="Train Image 2">
-            <img src="/images/image3.jpeg" alt="Train Image 3">
-            <img src="/images/image4.jpg" alt="Train Image 4">
-            <img src="/images/image5.jpg" alt="Train Image 5">
-        </section>
-        <section class="links">
-            <a href="/Inicio/Registro/registro-cliente.html" class="link-box">Registro Cliente</a>
-            <a href="/Inicio/Registro/registro-empresa.html" class="link-box">Registro Empresa</a>
-            <a href="reservas.html" class="link-box">Reservas</a>
-            <a href="pagos.html" class="link-box">Pagos</a>
-        </section>
-    </main>
-    <footer>
-        <p> © Copyright 2024. Todos los Derechos Reservados.</p>
-    </footer>
-</body>
-</html>
+                <ul class="nav-Links">
+                    <li class="headerImage"><a class="nav-link" href="#"><img id="header-img" src="/images/trenLogo.jpeg" alt="Company logo"></a></li>
+                    <li><a class="nav-link" href="#">Rutas</a></li>
+                    <li><a class="nav-link" href="#">Turismo</a></li>
+                    <li><a class="nav-link" href="#">Carga</a></li>
+                    <li><a class="nav-link" href="#">Noticias</a></li>
+                    <li><a id="loginLink" class="nav-link" href="#">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="container"></div>
+            <section id="section1">
+                <h1>TREN VERDE YACOPI</h1>
+                <img id="trainImg" src="/images/Inicio.jpeg" alt="Home Train Image">
 
-<script src="scripts.js"></script>
+            </section>
+            <div class="container">
+                <section id="features">
+                    <div class="grid">
+                        <div class="icon"><i class="fas fa-tree fa-5x"></i></div>
+                        <div class="desc">
+                            <h2>Paraiso de la Naturaleza</h2>
+                            <p>Conoce una de las joyas ocultas de la biodiversidad Colombiana en un tren de ultima generación.</p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon"><i class="fas fa-train fa-5x"></i></div>
+                        <div class="desc">
+                            <h2>Tren Amigable con el Ambiente</h2>
+                            <p>Haz parte de una experiencia en un tren de ultima generación sin emiciones contaminantes que tambien hace más economico el flete de tus cargas.</p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon"><i class="fas fa-solid fa-water fa-5x"></i></div>
+                        <div class="desc">
+                            <h2>Ruta Creada para Preservar Nuestros Recursos</h2>
+                            <p>La ruta fue creada conectando con el medio ambiente, respetando areas protegidas, fuentes hidricas y conservando los ecosistemas de la regíon.</p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon"><i class="fas fa-money-bill-alt fa-5x"></i></div>
+                        <div class="desc">
+                            <h2>Apoyamos Economicamente con la Siembra de Arboles</h2>
+                            <p>El 10% de tu tiquete en el tren va destinado a la siembra de Árboles en la región, así mismo si como empresa tienes un área de reserva en la región obtienes un descuento en el flete de tus cargas.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section id="services">
+                <div class="product" id="cargo">
+                    <div class="productTitle"> TRANSPORTE DE CARGA</div>
+                    <img class="productImage" src="/images/trenCarga.png" alt="Tren Carga">
+                    <ol>
+                        <li>Descuento especial en fletes por creación de zonas de reserva en la región</li>
+                        <li>Precios competitivos de flete debido al uso de energias limpias con nuestros trenes</li>
+                        <li>Beneficios tributarios</li>
+                    </ol>
+                    <br><br>
+                    <a href="/Inicio/Registro/registro-empresa.html" class="btn">REGISTRO EMPRESA</a>
+                </div>
+                <div class="product" id="passenger">
+                    <div class="productTitle">TRANSPORTE DE PASAJEROS</div>
+                    <img class="productImage" src="/images/trenPasajeros2.png" alt="Exterior car coating image">
+                    <ol>
+                        <li>Empieza tu aventura en el tren más moderno y eficiente del país con destinos que te deslumbran en toda tu travesia.</li>
+                        <li>Haz parte de esta experiencia unica en las cuevas de Yacopi y sus demás maravillas naturales</li><br>
+                    </ol>
+                    <br><br>
+                    <a href="/Inicio/Registro/registro-cliente.html" class="btn">REGISTRO CLIENTE</a>
+                </div>
+                <div class="product" id="bookings">
+                    <div class="productTitle">BIENVENIDO A BORDO</div>
+                    <img class="productImage" src="/images/trainStation.png" alt="Exterior car coating image">
+                    <ol>
+                        <li>Si ya estas registrado separa tus viajes aqui...</li>
+                        <li>10% del valor de tu tiquete de tren se destina a la siembra de arboles en la region</li>
+                        <li>Cotiza tu flete de carga</li>
+                    </ol>
+                    <br><br>
+                    <a href="reservas.html" class="btn">RESERVAS</a>
+                </div>
+            </section>
+            <section id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzPabcARdT8?si=Y1121tILAzagN5eE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section id="servicesYacopi">
+                <div class="product" id="yacopi">
+                    <div class="productTitle">YACOPI</div>
+                    <img class="productImage" src="/images/yacopi.png" alt="Exterior car coating image">
+                    <ol>
+                        <li>Desde la adrenalina de descender por cascadas hasta la serenidad de caminar por senderos selváticos, cada paso te sumergirá más en la asombrosa diversidad de este lugar.</li>
+                        <li>EMBARCATE EN TU MEJOR EXPERIENCIA!</li>
+                    </ol>
+                    <br><br>
+                    <a href="turismo.html" class="btn">CONOCE LA REGIÓN</a>
+                </div>
+            </section>
+            <div class="content">
+                <section id="section2">
+                    <h2>Registrate para recibir noticias sobre la siembra de arboles y el apoyo del Tren Verde Yacopi a la región.</h2>
+                    <form id="form" action="https://www.testURL">
+                        <input id="email" name="email" type="email" placeholder="Ingresar Email" required><br>
+                        <input class="btn" id="submit" type="submit" value="SUBSCRIBIRSE">
+                    </form>
+                </section>
+            </div>
+            <footer>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+                <span>Copyright 2024, Tren Verde Yacopi</span>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
