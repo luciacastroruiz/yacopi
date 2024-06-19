@@ -1,5 +1,6 @@
 
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,18 +50,21 @@ body {
 }
 
 .nav-Links li a:hover {
-    color: #2D9BF0;
+    color: #ffffff;
 }
 
+/**
+ * Estilos para los enlaces de navegación en la página de registro.
+ */
 .nav-Links li a {
-    color: #4AE4C2;
+    color: #4AE4C2; /* Cambia color texto de los enlaces */
     text-decoration: none;
     font-weight: bold;
     font-size: 19px;
 }
 
 #loginLink {
-  color: #2D9BF0;
+  color: #ffffff; /* Cambia color texto al pasar el mouse por encima de los enlaces */
 }
 
 .container {
@@ -79,7 +83,7 @@ body {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    border: 1px solid #28a745; /* Cambia color marco registro */
+    border: 1px solid #4AE4C2; /* Cambia color marco registro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra marco registro */
     background-color: #ffffff; /* Cambia el color del fondo del formulario */
@@ -121,7 +125,7 @@ body {
 .registration-form button {
     width: 100%;
     padding: 10px;
-    background-color: #4AE4C2;
+    background-color: #1f888e;
     border: none;
     color: white;
     font-size: 16px;
@@ -131,7 +135,7 @@ body {
 }
 
 .registration-form button:hover {
-    background-color: #1f888e;
+    background-color: #344955; /* Cambia color barra crear cuenta */
 }
 
 .registration-form .form-row:nth-child(odd) {
@@ -147,32 +151,13 @@ body {
     margin: 0;
 }
 
-/* Botones desplegables de registro */
-
-/**
- * Estilos para el encabezado y la navegación del registro.
- */
-header nav {
-    display: flex;
-    align-items: center;
-}
-
-/**
- * Estilos para el enlace del encabezado.
- */
-header a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #000;
-}
-
 .register-wrapper, .login-button {
     margin-left: auto;
 }
 
 .register-wrapper a, .login-button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #4AE4C2;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
