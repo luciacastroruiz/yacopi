@@ -20,6 +20,21 @@
             const mensaje = document.getElementById('mensaje');
             mensaje.textContent = '';
 
+            /**
+             * Realiza una solicitud de registro de usuario a través de una petición POST a la API de TrenVerde.
+             * 
+             * @param {string} tipoDocumento - El tipo de documento del usuario.
+             * @param {string} numeroDocumento - El número de documento del usuario.
+             * @param {string} nombre - El nombre del usuario.
+             * @param {string} email - El correo electrónico del usuario.
+             * @param {string} telefono - El número de teléfono móvil del usuario.
+             * @param {string} telefonoFijo - El número de teléfono fijo del usuario.
+             * @param {string} fechaNacimiento - La fecha de nacimiento del usuario.
+             * @param {string} direccion - La dirección del usuario.
+             * @param {string} username - El nombre de usuario del usuario.
+             * @param {string} password - La contraseña del usuario.
+             * @returns {Promise} - Una promesa que se resuelve con la respuesta de la solicitud.
+             */
             try {
                 const response = await fetch('http://127.0.0.1:8090/trenverde/api/usuarios/registro_usuario', {
                     method: 'POST',
@@ -64,7 +79,6 @@
             <a href="#">Turismo</a>
             <a href="#">Carga Pesada</a>
             <a href="#">Noticias</a>
-            <!-- <a href="registro.html" class="register-button">Registrarse</a> -->
             <a href="#" class="login-button">Iniciar Sesión</a>
         </nav>       
     </header>
@@ -77,10 +91,6 @@
                     <label for="tipo-documento">Tipo de Documento</label>
                     <select id="tipo-documento" name="tipo-documento">
                         <option value="NIT">NIT</option>
-                        <!-- <option value="Cédula">Cédula de Ciudadania</option>
-                        <option value="Pasaporte">Pasaporte</option>
-                        <option value="Cédula Extranjeria">Cedula Extranjeria</option>
-                        <option value="Tarjeta Identidad">Tarjeta de Identidad</option> -->
                     </select>
                 </div>
                 <div class="form-row">

@@ -113,11 +113,17 @@ header .login-button {
 
 /* Botones desplegables de registro */
 
+/**
+ * Estilos para el encabezado y la navegación del registro.
+ */
 header nav {
     display: flex;
     align-items: center;
 }
 
+/**
+ * Estilos para el enlace del encabezado.
+ */
 header a {
     margin: 0 15px;
     text-decoration: none;
@@ -158,6 +164,10 @@ header a {
     box-sizing: border-box;
 }
 
+/**
+ * Cuando el mouse se encuentra sobre el elemento con la clase "register-wrapper",
+ * se muestra el elemento con la clase "register-options".
+ */
 .register-wrapper:hover .register-options {
     display: block;
 }
