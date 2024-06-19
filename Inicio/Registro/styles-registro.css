@@ -1,41 +1,76 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
+body {
+    background-color: #eee;
+    font-family:'Poppins', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+#nav-bar {
+    height: 10vh;
+    background: #344955;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-Links {
     display: flex;
-    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-left: auto;
+    flex-grow: 1;
 }
 
-header .header {
-    font-size: 1.5em;
+.headerImage {
+    flex-grow: 2;
+    padding: 1% 2% 1% 5%;
+}
+
+#header-img {
+  max-width: 80px;
+  border-radius: 5px;
+  border: #4AE4C2 solid 2px;
+}
+
+.nav-link {
+    padding: 8px;
+    margin: 8px;
+    margin-right: 35px;
+}
+
+.nav-Links li a:hover {
+    color: #2D9BF0;
+}
+
+.nav-Links li a {
+    color: #4AE4C2;
+    text-decoration: none;
     font-weight: bold;
+    font-size: 19px;
 }
 
-header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #000;
+#loginLink {
+  color: #2D9BF0;
 }
 
-header .register-button, header .login-button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-header .login-button {
-    background-color: #007bff;
+.grid {
+  display: flex;
 }
 
 /* Path: registro-usuario.css */
@@ -86,16 +121,17 @@ header .login-button {
 .registration-form button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #4AE4C2;
     border: none;
     color: white;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .registration-form button:hover {
-    background-color: #218838;
+    background-color: #1f888e;
 }
 
 .registration-form .form-row:nth-child(odd) {
@@ -187,10 +223,36 @@ header a {
 
 /* pie de pagina */
 
-footer 
-{
-    text-align: center; /* Centra el texto dentro del pie de página */
-    padding: 20px 0; 
-    background-color: #ffffff; /* Color de fondo del pie de página */
-    color: #333; /* Color del texto del pie de página */
-}
+footer {
+    margin-top: 30px;
+    background-color: #344955;
+    padding: 20px;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  footer > ul > li {
+    padding: 0 10px;
+    
+  }
+  
+  footer li a {
+    color: #4AE4C2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    color: #4AE4C2;
+    font-weight: bold;
+  }
+  
