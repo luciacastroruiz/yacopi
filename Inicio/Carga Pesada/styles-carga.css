@@ -17,6 +17,7 @@ body {
 #nav-bar {
     height: 10vh;
     background: #344955;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .nav-Links {
