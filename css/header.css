@@ -1,5 +1,6 @@
 
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,18 +50,21 @@ body {
 }
 
 .nav-Links li a:hover {
-    color: #2D9BF0;
+    color: #ffffff;
 }
 
+/**
+ * Estilos para los enlaces de navegación en la página de registro.
+ */
 .nav-Links li a {
-    color: #4AE4C2;
+    color: #4AE4C2; /* Cambia color texto de los enlaces */
     text-decoration: none;
     font-weight: bold;
     font-size: 19px;
 }
 
 #loginLink {
-  color: #2D9BF0;
+  color: #ffffff; /* Cambia color texto al pasar el mouse por encima de los enlaces */
 }
 
 .container {
@@ -72,3 +76,4 @@ body {
 .grid {
   display: flex;
 }
+
