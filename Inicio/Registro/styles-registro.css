@@ -206,7 +206,6 @@ body {
     color: #ffffff; /* Cambia el color del texto botones registro */
 }
 
-/* styles-registro.css */
 
 /* footer */
 .footer {
@@ -324,5 +323,5 @@ body {
     width: 35px; /* Tamaño de los iconos */
     height: auto; 
     border: 1px solid #fff;  /* Borde blanco para los iconos de redes sociales */
-    
+    transform: translateX(-10px) translateY(-10px);
 }
