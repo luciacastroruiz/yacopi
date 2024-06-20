@@ -83,7 +83,7 @@ body {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    border: 1px solid #4AE4C2; /* Cambia color marco registro */
+    border: 1px solid #1f888e; /* Cambia color marco registro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra marco registro */
     background-color: #ffffff; /* Cambia el color del fondo del formulario */
@@ -125,7 +125,7 @@ body {
 .registration-form button {
     width: 100%;
     padding: 10px;
-    background-color: #1f888e;
+    background-color: #1f888e; /* cambia color de el boton crear cuenta */
     border: none;
     color: white;
     font-size: 16px;
@@ -206,38 +206,122 @@ body {
     color: #ffffff; /* Cambia el color del texto botones registro */
 }
 
-/* pie de pagina */
 
-footer {
-    margin-top: 30px;
-    background-color: #344955;
+/* footer */
+.footer {
+    background-color: #344955; /* Fondo del footer */
     padding: 20px;
-  }
-  
-  footer > ul {
+    border-top: 1px solid #dcdcdc;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Texto en blanco */
+}
+
+/* Layout for the content area */
+.footer__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+/* Styling for the logo section */
+.footer__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px; /* Ajuste de margen para separación vertical */
+}
+
+.footer__logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border: 2px solid #fff; /* Borde blanco para los logos */
+}
+
+.footer__title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Styling for each column in the footer */
+.footer__column {
+    flex: 1;
+    margin-bottom: 20px; /* Ajuste de margen para separación vertical */
+    min-width: 150px; /* Asegurar un tamaño mínimo para columnas */
+}
+
+/* Personalización de la posición de las columnas */
+.footer__column--mapa {
+    /* Cambie estos valores para ajustar la posición */
+    margin-top: 10px; /* Movimiento en el eje Y */
+    margin-left: 155px; /* Movimiento en el eje X */
+}
+
+.footer__column--utilidades {
+    /* Cambie estos valores para ajustar la posición */
+    margin-top: 10px; /* Movimiento en el eje Y */
+    margin-left: 30px; /* Movimiento en el eje X */
+}
+
+.footer__column--desarrollado {
+    /* Cambie estos valores para ajustar la posición */
+    margin-top: 10px; /* Movimiento en el eje Y */
+    margin-left: 50px; /* Movimiento en el eje X */
+}
+
+.footer__heading {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer__list {
     list-style: none;
-  }
-  
-  footer > ul > li {
-    padding: 0 10px;
-    
-  }
-  
-  footer li a {
-    color: #4AE4C2;
+    padding: 0;
+}
+
+.footer__list li {
+    margin-bottom: 5px;
+}
+
+/* Styling for the links */
+.footer__link {
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-  }
-  
-  footer > span {
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    font-size: 0.8em;
-    color: #4AE4C2;
-    font-weight: bold;
-  }
-  
+    color: #fff; /* Enlaces en blanco */
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+
+.footer__bottom {
+    display: flex; 
+    justify-content: center; /* Centrar el contenido */
+    align-items: center; 
+    border-top: 1px solid #dcdcdc;
+    padding-top: 10px;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+.footer__copyright {
+    margin: 0;
+    text-align: center; /* Centrar el texto */
+}
+
+.footer__social {
+    display: flex; 
+    justify-content: right; /* Centrar los iconos */
+    margin-left: 10px; /* Ajuste de margen */
+}
+
+.footer__social-link {
+    margin-left: 10px; /* Espacio entre los iconos */
+}
+
+.footer__social-link img {
+    width: 35px; /* Tamaño de los iconos */
+    height: auto; 
+    border: 1px solid #fff;  /* Borde blanco para los iconos de redes sociales */
+    transform: translateX(-10px) translateY(-10px);
+}
