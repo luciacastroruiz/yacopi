@@ -60,7 +60,7 @@ body {
 }
 
 #loginLink {
-  color: #2D9BF0;
+  color: #ffffff; 
 }
 
 .container {
@@ -85,7 +85,7 @@ body {
   .line {
       width: 30px;
       height: 3px;
-      background: #4AE4C2;
+      background: #4AE4C2; 
       margin: 5px;
   }
 
@@ -108,7 +108,7 @@ body {
 
   .nav-Links {
       position: fixed;
-      background: #344955;
+      background: #344955; 
       height: 100vh;
       width: 100%;
       flex-direction: column;
@@ -181,7 +181,7 @@ body {
 
 #section2 h1 {
   font-style: italic solid;
-  text-shadow: 2px 2px 3px #4AE4C2;
+  text-shadow: 2px 2px 3px #4AE4C2; 
 }
 
 #email {
@@ -197,7 +197,7 @@ body {
 
 #submit {
     width: 40%;
-    background-color: #2D9BF0;
+    background-color: #2D9BF0; /* Cambia color barra suscribirse */
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -209,7 +209,7 @@ body {
 }
 
 #submit:hover {
-    background-color: #4AE4C2;
+    background-color: #344955; /* Cambia color barra suscribirse */
 }
 
 #features {
