@@ -12,3 +12,33 @@ hamburger.addEventListener('click', () => {
         link.classList.toggle('fade')
     })
 })
+
+/** Script para slider de rutas*/
+document.addEventListener("DOMContentLoaded", function() {
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const slides = document.querySelector(".sliders");
+    const slideItems = document.querySelectorAll(".sliders li");
+
+    let currentIndex = 0;
+    const totalSlides = slideItems.length;
+    const slideWidth = slideItems[0].clientWidth;
+
+    // Al hacer clic en el botón next//
+    nextBtn.addEventListener("click", function() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlidePosition();
+    });
+
+    // Al hacer clic en el botón prev//
+    prevBtn.addEventListener("click", function() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlidePosition();
+    });
+
+    // Función para actualizar la posición de los sliders//
+    function updateSlidePosition() {
+        const newPosition = -currentIndex * slideWidth;
+        slides.style.transform = `translateX(${newPosition}px)`;
+    }
+});

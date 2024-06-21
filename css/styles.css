@@ -1,54 +1,61 @@
 
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #eee;
-    font-family:'Poppins', sans-serif;
+  background-color: #eee;
+  font-family:'Poppins', sans-serif;
 }
 
 #page-wrapper {
-  position: relative;
+position: relative;
 }
 
 #nav-bar {
+<<<<<<< Updated upstream:css/styles.css
     height: 10vh;
     background: #344955;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+=======
+  height: 10vh;
+  background: #344955;
+>>>>>>> Stashed changes:Inicio/styles.css
 }
 
 .nav-Links {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-    flex-grow: 1;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  flex-grow: 1;
 }
 
 .headerImage {
-    flex-grow: 2;
-    padding: 1% 2% 1% 5%;
+  flex-grow: 2;
+  padding: 1% 2% 1% 5%;
 }
 
 #header-img {
-  max-width: 80px;
-  border-radius: 5px;
-  border: #4AE4C2 solid 2px;
+max-width: 80px;
+border-radius: 5px;
+border: #4AE4C2 solid 2px;
 }
 
 .nav-link {
-    padding: 8px;
-    margin: 8px;
-    margin-right: 35px;
+  padding: 8px;
+  margin: 8px;
+  margin-right: 35px;
 }
 
 .nav-Links li a:hover {
+<<<<<<< Updated upstream:css/styles.css
     color: #ffffff; /* Cambia color texto de los enlaces */
 }
 
@@ -61,51 +68,75 @@ body {
 
 #loginLink {
   color: #ffffff; 
+=======
+  color: #2D9BF0;
+>>>>>>> Stashed changes:Inicio/styles.css
+}
+
+.nav-Links li a {
+  color: #4AE4C2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+#loginLink {
+color: #2D9BF0;
 }
 
 .container {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .grid {
-  display: flex;
+display: flex;
 }
 
 @media screen and (max-width: 930px) {
-  #trainImg {
-    width: 600px;
-  }
+#trainImg {
+  width: 600px;
+}
 
 }
 
 @media screen and (max-width: 768px) {
 
+<<<<<<< Updated upstream:css/styles.css
   .line {
       width: 30px;
       height: 3px;
       background: #4AE4C2; 
       margin: 5px;
   }
+=======
+.line {
+    width: 30px;
+    height: 3px;
+    background: #4AE4C2;
+    margin: 5px;
+}
+>>>>>>> Stashed changes:Inicio/styles.css
 
-  nav {
-      position: relative;
-  }
+nav {
+    position: relative;
+}
 
-  .hamburger {
-      position: absolute;
-      cursor: pointer;
-      right: 5%;
-      top: 50%;
-      transform: translate(-5%, -50%);
-      z-index: 3;
-  }
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 3;
+}
 
-  .headerImage {
-    flex-grow: unset;
-  }
+.headerImage {
+  flex-grow: unset;
+}
 
+<<<<<<< Updated upstream:css/styles.css
   .nav-Links {
       position: fixed;
       background: #344955; 
@@ -123,41 +154,61 @@ body {
       -webkit-clip-path: circle(1100px at 90% -10%);
       pointer-events: all;
   }
+=======
+.nav-Links {
+    position: fixed;
+    background: #344955;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 90% -10%);
+    -webkit-clip-path: circle(0px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 2;
+}
+.nav-Links.open {
+    clip-path: circle(1100px at 90% -10%);
+    -webkit-clip-path: circle(1100px at 90% -10%);
+    pointer-events: all;
+}
+>>>>>>> Stashed changes:Inicio/styles.css
 
-  .landing {
-      flex-direction: column;
-  }
-  .nav-Links li {
-      opacity: 0;
-  }
+.landing {
+    flex-direction: column;
+}
+.nav-Links li {
+    opacity: 0;
+}
 
-  .nav-Links li a {
-      font-size: 25px;
-  }
+.nav-Links li a {
+    font-size: 25px;
+}
 
-  .nav-Links li:nth-child(2){
-      transition: all 0.5s ease 0.2s;
-  }
-  .nav-Links li:nth-child(3){
-      transition: all 0.5s ease 0.4s;
-  }
-  .nav-Links li:nth-child(4){
-      transition: all 0.5s ease 0.6s;
-  }
-  .nav-Links li:nth-child(5){
-      transition: all 0.5s ease 0.8s;
-  }
-  li.fade {
-      opacity: 1;
-  }
-  #trainImg {
-    width: 300px;
-  }
+.nav-Links li:nth-child(2){
+    transition: all 0.5s ease 0.2s;
+}
+.nav-Links li:nth-child(3){
+    transition: all 0.5s ease 0.4s;
+}
+.nav-Links li:nth-child(4){
+    transition: all 0.5s ease 0.6s;
+}
+.nav-Links li:nth-child(5){
+    transition: all 0.5s ease 0.8s;
+}
+li.fade {
+    opacity: 1;
+}
+#trainImg {
+  width: 300px;
+}
 }
 
 
 
 #section1 {
+<<<<<<< Updated upstream:css/styles.css
     text-align: center;
     padding: 40px 10px;
 }
@@ -175,27 +226,51 @@ body {
 }
 
 #section2 {
+=======
+>>>>>>> Stashed changes:Inicio/styles.css
   text-align: center;
   padding: 40px 10px;
 }
 
+#section1 h1 {
+  font-style: solid;
+}
+
+#trainImg {
+  max-width: 900px;
+  border-radius: 18px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+#section2 {
+text-align: center;
+padding: 40px 10px;
+}
+
 #section2 h1 {
+<<<<<<< Updated upstream:css/styles.css
   font-style: italic solid;
   text-shadow: 2px 2px 3px #4AE4C2; 
+=======
+font-style: italic solid;
+text-shadow: 2px 2px 3px #4AE4C2;
+>>>>>>> Stashed changes:Inicio/styles.css
 }
 
 #email {
-    width: 50%;
-    height: 40px;
-    font-family:  Montserrat, sans-serif;
-    font-weight: bold;
-    padding: 10px;
-    margin: 20px 10px ;
-    border-radius: 10px;
-    border: solid 1px hsl(0, 0%, 70%);
+  width: 50%;
+  height: 40px;
+  font-family:  Montserrat, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px 10px ;
+  border-radius: 10px;
+  border: solid 1px hsl(0, 0%, 70%);
 }
 
 #submit {
+<<<<<<< Updated upstream:css/styles.css
     width: 40%;
     background-color: #2D9BF0; /* Cambia color barra suscribirse */
     color: white;
@@ -337,38 +412,218 @@ body {
 .product > a {
   background-color: #4AE4C2;
   color: hsl(0, 5%, 22%);
+=======
+  width: 40%;
+  background-color: #2D9BF0;
+  color: white;
+>>>>>>> Stashed changes:Inicio/styles.css
   padding: 14px 20px;
-  margin: 0px 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  text-decoration: none;
+  transform: skewX(-4deg);
+}
+
+#submit:hover {
+  background-color: #4AE4C2;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: #4AE4C2;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+.desc p {
+  max-width: 650px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-top: 30px;
+}
+
+#video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.productImage {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+#services {
+margin-top: 60px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#servicesYacopi {
+margin-top: 10px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.product {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: calc(100% / 3);
+margin: 10px;
+border: 1px solid #000;
+border-radius: 3px;
+position: relative;
+}
+
+.product:hover {
+  background-color: #ddd;
+}
+
+.productTitle {
+background-color: #ddd;
+font-weight: bold;
+font-style: italic;
+color: black;
+padding: 15px 0;
+width: 100%;
+text-transform: uppercase;
+}
+
+.product > h2 {
+margin-top: 15px;
+}
+
+.product > ol {
+margin: 15px 0;
+list-style: none;
+padding-right: 5px;
+padding-left: 5px;
+}
+
+.product > ol > li {
+padding: 5px 0;
+}
+
+.product > a {
+background-color: #4AE4C2;
+color: hsl(0, 5%, 22%);
+padding: 14px 20px;
+margin: 0px 0;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+text-decoration: none;
 }
 
 .product > a:hover {
-  background-color: #2D9BF0;
-  transition: background-color 1s;
+background-color: #2D9BF0;
+transition: background-color 1s;
 }
 
 .product > button:hover {
-  background-color: #2D9BF0;
-  transition: background-color 1s;
+background-color: #2D9BF0;
+transition: background-color 1s;
 }
 
 @media (max-width: 800px) {
-  #services {
-    flex-direction: column;
-  }
-  .product {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
+#services {
+  flex-direction: column;
+}
+.product {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
 }
 
+<<<<<<< Updated upstream:css/styles.css
+=======
+footer {
+margin-top: 30px;
+background-color: #344955;
+padding: 20px;
+}
+
+footer > ul {
+display: flex;
+justify-content: space-around;
+list-style: none;
+}
+
+footer > ul > li {
+padding: 0 10px;
+
+}
+
+footer li a {
+color: #4AE4C2;
+text-decoration: none;
+font-weight: bold;
+font-size: 1em;
+}
+
+footer > span {
+margin-top: 5px;
+display: flex;
+justify-content: center;
+font-size: 0.8em;
+color: #4AE4C2;
+font-weight: bold;
+}
+
+
+>>>>>>> Stashed changes:Inicio/styles.css
