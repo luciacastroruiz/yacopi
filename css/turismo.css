@@ -10,6 +10,7 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 1.5); 
 }
 
+
 @media (max-width: 550px) {
     #features .imagenes {
       display: none;
