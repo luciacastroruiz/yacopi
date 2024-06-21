@@ -273,6 +273,8 @@ body {
     height: 100%;
 }
 
+/* secciones registro */
+
 .productImage {
     max-width: 300px;
     max-height: 300px;
@@ -359,6 +361,8 @@ body {
   background-color: #2D9BF0;
   transition: background-color 1s;
 }
+
+/* fin secciones registro */
 
 @media (max-width: 800px) {
   #services {
