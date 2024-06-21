@@ -1,0 +1,55 @@
+.imagenes img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38vw;
+    color: #4AE4C2;
+    border-radius: 18px;
+    margin-top: 20px;
+    opacity: 0.8;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 1.5); 
+}
+
+@media (max-width: 550px) {
+    #features .imagenes {
+      display: none;
+    }
+}
+@media (max-width: 550px) {
+    #features .descTurismo {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    #features {
+      margin-top: 0;
+    }
+}
+
+
+.grid .descTurismo {
+    display: flex;
+    margin: 60px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.descTurismo p {
+    text-align: justify;
+}
+
+#segundaImagen img {
+    display: flex;
+}
+
+#segundoGrid {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
