@@ -16,14 +16,9 @@ position: relative;
 }
 
 #nav-bar {
-<<<<<<< Updated upstream:css/styles.css
     height: 10vh;
     background: #344955;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-=======
-  height: 10vh;
-  background: #344955;
->>>>>>> Stashed changes:Inicio/styles.css
 }
 
 .nav-Links {
@@ -55,7 +50,6 @@ border: #4AE4C2 solid 2px;
 }
 
 .nav-Links li a:hover {
-<<<<<<< Updated upstream:css/styles.css
     color: #ffffff; /* Cambia color texto de los enlaces */
 }
 
@@ -68,9 +62,6 @@ border: #4AE4C2 solid 2px;
 
 #loginLink {
   color: #ffffff; 
-=======
-  color: #2D9BF0;
->>>>>>> Stashed changes:Inicio/styles.css
 }
 
 .nav-Links li a {
@@ -94,6 +85,8 @@ color: #2D9BF0;
 display: flex;
 }
 
+/* Responsive imagen home */ 
+
 @media screen and (max-width: 930px) {
 #trainImg {
   width: 600px;
@@ -101,23 +94,15 @@ display: flex;
 
 }
 
+/* Responsive Header */ 
 @media screen and (max-width: 768px) {
 
-<<<<<<< Updated upstream:css/styles.css
   .line {
       width: 30px;
       height: 3px;
       background: #4AE4C2; 
       margin: 5px;
   }
-=======
-.line {
-    width: 30px;
-    height: 3px;
-    background: #4AE4C2;
-    margin: 5px;
-}
->>>>>>> Stashed changes:Inicio/styles.css
 
 nav {
     position: relative;
@@ -136,25 +121,6 @@ nav {
   flex-grow: unset;
 }
 
-<<<<<<< Updated upstream:css/styles.css
-  .nav-Links {
-      position: fixed;
-      background: #344955; 
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(0px at 90% -10%);
-      -webkit-clip-path: circle(0px at 90% -10%);
-      transition: all 1s ease-out;
-      pointer-events: none;
-      z-index: 2;
-  }
-  .nav-Links.open {
-      clip-path: circle(1100px at 90% -10%);
-      -webkit-clip-path: circle(1100px at 90% -10%);
-      pointer-events: all;
-  }
-=======
 .nav-Links {
     position: fixed;
     background: #344955;
@@ -172,7 +138,6 @@ nav {
     -webkit-clip-path: circle(1100px at 90% -10%);
     pointer-events: all;
 }
->>>>>>> Stashed changes:Inicio/styles.css
 
 .landing {
     flex-direction: column;
@@ -208,7 +173,6 @@ li.fade {
 
 
 #section1 {
-<<<<<<< Updated upstream:css/styles.css
     text-align: center;
     padding: 40px 10px;
 }
@@ -226,8 +190,6 @@ li.fade {
 }
 
 #section2 {
-=======
->>>>>>> Stashed changes:Inicio/styles.css
   text-align: center;
   padding: 40px 10px;
 }
@@ -249,13 +211,8 @@ padding: 40px 10px;
 }
 
 #section2 h1 {
-<<<<<<< Updated upstream:css/styles.css
   font-style: italic solid;
   text-shadow: 2px 2px 3px #4AE4C2; 
-=======
-font-style: italic solid;
-text-shadow: 2px 2px 3px #4AE4C2;
->>>>>>> Stashed changes:Inicio/styles.css
 }
 
 #email {
@@ -270,7 +227,6 @@ text-shadow: 2px 2px 3px #4AE4C2;
 }
 
 #submit {
-<<<<<<< Updated upstream:css/styles.css
     width: 40%;
     background-color: #2D9BF0; /* Cambia color barra suscribirse */
     color: white;
@@ -414,11 +370,6 @@ text-shadow: 2px 2px 3px #4AE4C2;
 .product > a {
   background-color: #4AE4C2;
   color: hsl(0, 5%, 22%);
-=======
-  width: 40%;
-  background-color: #2D9BF0;
-  color: white;
->>>>>>> Stashed changes:Inicio/styles.css
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -594,40 +545,4 @@ transition: background-color 1s;
 }
 }
 
-<<<<<<< Updated upstream:css/styles.css
-=======
-footer {
-margin-top: 30px;
-background-color: #344955;
-padding: 20px;
-}
-
-footer > ul {
-display: flex;
-justify-content: space-around;
-list-style: none;
-}
-
-footer > ul > li {
-padding: 0 10px;
-
-}
-
-footer li a {
-color: #4AE4C2;
-text-decoration: none;
-font-weight: bold;
-font-size: 1em;
-}
-
-footer > span {
-margin-top: 5px;
-display: flex;
-justify-content: center;
-font-size: 0.8em;
-color: #4AE4C2;
-font-weight: bold;
-}
-
-
->>>>>>> Stashed changes:Inicio/styles.css
+/* fin secciones registro */
